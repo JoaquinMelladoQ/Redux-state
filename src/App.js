@@ -19,7 +19,6 @@ class App extends Component {
 
   render() {
     const { incrementar, decrementar, valor  } = this.props
-    console.log(this.state)
     return (
       <div className="App">
         <p>{valor}</p>
