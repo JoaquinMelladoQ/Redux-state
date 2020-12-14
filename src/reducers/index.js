@@ -1,12 +1,29 @@
 
+const INCREMENTAR = 'CONTADOR/INCREMENTAR'  
+const DECREMENTAR = 'CONTADOR/DECREMENTAR'  
+const SETEAR = 'CONTADOR/SETEAR'
+
+const incrementar = () => ({
+    type: INCREMENTAR, 
+})
+const decrementar = () => ({
+    type: DECREMENTAR, 
+})
+
+const setear = payload => ({
+    type: SETEAR,
+    payload
+})
+
 const initialState = 0
 export default function (state = initialState, action) {
-    console.log(action)
     switch (action.type) {
-        case 'INCREMENTAR':
+        case INCREMENTAR:
             return state + 1
-        case 'DECREMENTAR':
+        case DECREMENTAR:
             return state - 1 
+        case SETEAR:
+            return action.payload
         default:
             return state
     }
