@@ -8,9 +8,12 @@ import './App.css'
 class App extends Component {
 
   render() {
-    console.log(this.props)
+    const { incrementar, decrementar, setear, valor  } = this.props
     return (
       <div className="App">
+        <p>{valor}</p>
+        <button onClick={incrementar} >Incrementar</button>
+        <button onClick={decrementar} >Decrementar</button>
       </div>
     );
   }
