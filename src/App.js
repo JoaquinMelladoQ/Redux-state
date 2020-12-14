@@ -7,6 +7,12 @@ import './App.css'
 
 class App extends Component {
 
+
+  handleChange = e => {
+     const { name, value } = e.target
+     this.setState({ [name]: value })
+  }
+
   render() {
     const { incrementar, decrementar, setear, valor  } = this.props
     return (
@@ -14,6 +20,7 @@ class App extends Component {
         <p>{valor}</p>
         <button onClick={incrementar} >Incrementar</button>
         <button onClick={decrementar} >Decrementar</button>
+        <input name='valor' onChange={this.handleChange} />
       </div>
     );
   }
