@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { incrementar, decrementar, setear } from './reducers'
 import logo from './logo.svg'
 import './App.css'
 

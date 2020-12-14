@@ -3,14 +3,14 @@ const INCREMENTAR = 'CONTADOR/INCREMENTAR'
 const DECREMENTAR = 'CONTADOR/DECREMENTAR'  
 const SETEAR = 'CONTADOR/SETEAR'
 
-const incrementar = () => ({
+export const incrementar = () => ({
     type: INCREMENTAR, 
 })
-const decrementar = () => ({
+export const decrementar = () => ({
     type: DECREMENTAR, 
 })
 
-const setear = payload => ({
+export const setear = payload => ({
     type: SETEAR,
     payload
 })
