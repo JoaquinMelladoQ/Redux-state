@@ -23,6 +23,10 @@ const mapStateToProps = state => {
   }
 }  
 
-const mapDispatchToProps = dispatch => ({})
+const mapDispatchToProps = dispatch => ({
+  incrementar: () => dispatch(incrementar()),
+  decrementar: () => dispatch(decrementar()),
+  setear: payload => dispatch(setear(payload)),
+})
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
