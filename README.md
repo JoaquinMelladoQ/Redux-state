@@ -11,3 +11,4 @@
 + ReduxForm / Field
 + Meta / Input / Validations / SubmitFailed / Destructuring
 + Custom Component
++ Ducks / bindActionCreators
